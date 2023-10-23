@@ -22,9 +22,9 @@ t_real		*ft_create_treal(short integer, short fractional)
 	if (!(real->integer = ft_memalloc(integer * 4))
 			|| !(real->fractional = ft_memalloc(fractional * 4)))
 	{
-		free(real);
 		ft_memdel((void**)&real->integer);
 		ft_memdel((void**)&real->fractional);
+		free(real);
 		return (NULL);
 	}
 	return (real);
