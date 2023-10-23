@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME				= corewar
-FLAGS				= -Wall -Wextra -Werror 
+FLAGS				= -Wall -Wextra -Werror
 
 
 PATH_OBJS			= objects
@@ -38,7 +38,7 @@ DIR_INTERFACE_ERR		= interface
 
 SRCS_INTERFACE_ERR		= save_error_to_log.c ft_exit.c
 
-SRCS_ERR	= $(addprefix $(DIR_INTERFACE_ERR)/, $(SRCS_INTERFACE_ERR)) 
+SRCS_ERR	= $(addprefix $(DIR_INTERFACE_ERR)/, $(SRCS_INTERFACE_ERR))
 ################################################################################
 
 ################################################################################
@@ -50,7 +50,7 @@ DIR_INTERFACE_NB		= interface
 
 SRCS_INTERFACE_NB		= is_overflow.c is_number.c number_reverse_mem.c
 
-SRCS_NB		= $(addprefix $(DIR_INTERFACE_NB)/, $(SRCS_INTERFACE_NB)) 
+SRCS_NB		= $(addprefix $(DIR_INTERFACE_NB)/, $(SRCS_INTERFACE_NB))
 ################################################################################
 
 ################################################################################
@@ -136,7 +136,7 @@ DIR_CONSTRDESTR_PL		= constr_and_destr
 
 SRCS_DEBUG_PL			= debug_print_player.c
 SRCS_GETSET_PL			= player_get_size.c
-SRCS_PARSING_PL			= player_parsing.c 
+SRCS_PARSING_PL			= player_parsing.c
 SRCS_INTERFACE_PL		= player_memcpy.c player_introduce_yourself.c \
 						  player_say_won.c
 SRCS_VALIDATIONS_PL		= player_validation.c
@@ -181,7 +181,7 @@ DIR_INTERFACE_PR		= interface
 
 SRCS_INTERFACE_PR		= print_line.c print_space.c print_memory.c
 
-SRCS_PR	= $(addprefix $(DIR_INTERFACE_PR)/, $(SRCS_INTERFACE_PR)) 
+SRCS_PR	= $(addprefix $(DIR_INTERFACE_PR)/, $(SRCS_INTERFACE_PR))
 ################################################################################
 
 ################################################################################
@@ -194,7 +194,7 @@ DIR_GETSET_MR			= get_set
 DIR_INTERFACE_MR		= interface
 DIR_CONSTRDESTR_MR		= constr_and_destr
 
-SRCS_DEBUG_MR			= 
+SRCS_DEBUG_MR			=
 SRCS_GETSET_MR			= memory_get_size.c memory_get_amount_segments.c \
 						  memory_get_address_segment.c
 SRCS_INTERFACE_MR		= memory_export_dump.c memory_read.c memory_shift.c \
@@ -219,16 +219,16 @@ DIR_INTERFACE_PAR		= interface
 DIR_VALIDATIONS_PAR		= validations
 DIR_CONSTRDESTR_PAR		= constr_and_destr
 
-SRCS_DEBUG_PAR			= 
+SRCS_DEBUG_PAR			=
 SRCS_GETSET_PAR			= params_get_cycle_to_die.c params_get_cycle.c \
 						  param_set_player_live.c \
 						  params_get_players_last_live.c
-SRCS_PARSING_PAR		= 
+SRCS_PARSING_PAR		=
 SRCS_INTERFACE_PAR		= params_increase_number_checks.c \
 						  params_need_decrease_cycle_to_die.c \
 						  params_decrease_cycle_to_die.c params_reset.c \
 						  params_increase_cycle.c param_increase_oper_live.c
-SRCS_VALIDATIONS_PAR	= 
+SRCS_VALIDATIONS_PAR	=
 SRCS_CONSTRDESTR_PAR	= new_params.c destroy_params.c
 
 SRCS_PAR	= $(addprefix $(DIR_DEBUG_PAR)/, $(SRCS_DEBUG_PAR)) \
@@ -251,15 +251,15 @@ DIR_INTERFACE_CAR		= interface
 DIR_VALIDATIONS_CAR		= validations
 DIR_CONSTRDESTR_CAR		= constr_and_destr
 
-SRCS_DEBUG_CAR			= 
+SRCS_DEBUG_CAR			=
 SRCS_GETSET_CAR			= carriage_set_id.c carriage_set_oper_code.c \
 						  carriage_set_carry.c carriage_set_reg.c \
 						  carriage_get_reg.c carriage_set_cycle_live.c \
 						  carriage_set_address.c
-SRCS_PARSING_CAR		= 
+SRCS_PARSING_CAR		=
 SRCS_INTERFACE_CAR		= carriage_need_set_code.c carriage_skip_code.c \
 						  carriage_fetch_code.c carriage_is_die.c
-SRCS_VALIDATIONS_CAR	= 
+SRCS_VALIDATIONS_CAR	=
 SRCS_CONSTRDESTR_CAR	= new_carriage.c destroy_carriage.c carriage_clone.c
 
 SRCS_CAR	= $(addprefix $(DIR_DEBUG_CAR)/, $(SRCS_DEBUG_CAR)) \
@@ -282,14 +282,14 @@ DIR_INTERFACE_CARS		= interface
 DIR_VALIDATIONS_CARS	= validations
 DIR_CONSTRDESTR_CARS	= constr_and_destr
 
-SRCS_DEBUG_CARS			= 
-SRCS_GETSET_CARS		= 
-SRCS_PARSING_CARS		= 
+SRCS_DEBUG_CARS			=
+SRCS_GETSET_CARS		=
+SRCS_PARSING_CARS		=
 SRCS_INTERFACE_CARS		= carriages_add_carige.c carriages_iterator_set_next.c \
 						  carriages_have_live.c carriages_delete_carrige.c
-SRCS_VALIDATIONS_CARS	= 
+SRCS_VALIDATIONS_CARS	=
 SRCS_CONSTRDESTR_CARS	= new_carriages.c destroy_carriages.c \
-						  carriages_init_iterator.c destroy_carlst.c 
+						  carriages_init_iterator.c destroy_carlst.c
 
 SRCS_CARS	= $(addprefix $(DIR_DEBUG_CARS)/, $(SRCS_DEBUG_CARS)) \
 			  $(addprefix $(DIR_GETSET_CARS)/, $(SRCS_GETSET_CARS)) \
@@ -322,12 +322,12 @@ SRCS_PACKAGES_NET		= network_package_free.c network_pack_player.c \
 						  network_unpack_player.c
 SRCS_EXCHANGE_NET		= network_recv_players.c network_send_player.c \
 						  network_broadcast.c network_fetch_data_to_buff.c
-SRCS_INTERFACE_NET		= 
-SRCS_VALIDATIONS_NET	= 
+SRCS_INTERFACE_NET		=
+SRCS_VALIDATIONS_NET	=
 SRCS_CONSTRDESTR_NET	= network_connect_to_server.c connect_destroy.c \
 						  network_get_connect_clients.c
 SRCS_CONNECTIONS_NET	= network_take_connections.c network_stop_conections.c \
-						  network_user_verification.c network_verification.c 
+						  network_user_verification.c network_verification.c
 
 
 SRCS_NET	= $(addprefix $(DIR_GETSET_NET)/, $(SRCS_GETSET_NET)) \
@@ -351,9 +351,9 @@ DIR_INTERFACE_OPR		= interface
 DIR_VALIDATIONS_OPR		= validations
 DIR_CONSTRDESTR_OPR		= constr_and_destr
 
-SRCS_DEBUG_OPR			= 
+SRCS_DEBUG_OPR			=
 SRCS_GETSET_OPR			= operation_get_cyle_exec.c
-SRCS_PARSING_OPR		= 
+SRCS_PARSING_OPR		=
 SRCS_INTERFACE_OPR		= operation_exec.c operation_valid_code_oper.c \
 						  operation_valid_code_type_arg.c \
 						  operation_fetch_args.c operation_ld.c \
@@ -363,8 +363,8 @@ SRCS_INTERFACE_OPR		= operation_exec.c operation_valid_code_oper.c \
 						  operation_sti.c operation_fork.c operation_lld.c \
 						  operation_lldi.c operation_lfork.c\
 						  operation_aff.c
-SRCS_VALIDATIONS_OPR	= 
-SRCS_CONSTRDESTR_OPR	= 
+SRCS_VALIDATIONS_OPR	=
+SRCS_CONSTRDESTR_OPR	=
 
 SRCS_OPR	= $(addprefix $(DIR_DEBUG_OPR)/, $(SRCS_DEBUG_OPR)) \
 			  $(addprefix $(DIR_GETSET_OPR)/, $(SRCS_GETSET_OPR)) \
@@ -397,7 +397,7 @@ SRCS_SEND_PCKG_VISU			= package_init_memory.c package_end_game.c \
 SRCS_ACCEPT_PCKG_VISU		= processing_package_for_init.c \
 							accept_package_change_carriage_addres.c \
 							accept_package_new_carriage.c init_arena_for_visu.c \
-							init_players_for_visu.c init_carriage_for_visu.c 
+							init_players_for_visu.c init_carriage_for_visu.c
 
 SRCS_VISU_PCKG_VISU			= visu_run.c rendering.c \
 							visu_print_arena.c visu_write_in_mem.c \
@@ -413,7 +413,7 @@ SRCS_OTHER_VISU				= visu_init.c destroy_visu.c \
 							set_start_end_code_players.c set_color_players.c \
 							init_color_pairs.c set_color_carriages.c set_y_x.c \
 							keyboard_control.c key_processing_visu.c
-							
+
 SRCS_VISU	  = $(addprefix $(DIR_SEND_PCKG_VISU)/, $(SRCS_SEND_PCKG_VISU)) \
 				$(addprefix $(DIR_ACCEPT_PCKG_VISU)/, $(SRCS_ACCEPT_PCKG_VISU)) \
 				$(addprefix $(DIR_VISU_PCKG_VISU)/, $(SRCS_VISU_PCKG_VISU)) \
@@ -431,7 +431,8 @@ DIR_INTERFACE_CR		= interface
 DIR_CONSTRDESTR_CR		= constr_and_destr
 
 SRCS_MODS_CR			= corewar_client_mode.c corewar_server_mode.c \
-						  corewar_visual_mode.c corewar_default_mode.c
+						  corewar_visual_mode.c corewar_default_mode.c \
+						  corewar_stream_mode.c
 SRCS_DEBUG_CR			= debug_print_memory_fd.c
 SRCS_INTERFACE_CR		= print_usage.c print_help.c corewar.c \
 						  is_suitable_file.c corewar_exec.c corewar_run.c \

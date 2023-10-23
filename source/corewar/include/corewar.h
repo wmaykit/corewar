@@ -55,8 +55,8 @@
 ** function to the VALID_EXTRA macro in same index. If it is set to NULL,
 ** delete it. In OPTIONS_EXTRA, the terminator ("") is required at the end.
 */
-# define OPTIONS_EXTRA			"server", "client", "aff", ""
-# define VALID_EXTRA			valid_server, valid_client, NULL, NULL
+# define OPTIONS_EXTRA			"server", "client", "aff", "stream", ""
+# define VALID_EXTRA			valid_server, valid_client, NULL, NULL, NULL
 # define NEW_OPT_EXTRA			new_obj_server, new_obj_client, NULL, NULL
 
 # define OPTIONS_WITH_NUM		"dump", "n", ""
@@ -70,6 +70,7 @@
 # define O_SERVER				0x00000008
 # define O_CLIENT				0x00000010
 # define O_AFF					0x00000020
+# define O_STREAM				0x00000064
 
 # define VALID_OPT_WITH_NUM		valid_dump, valid_n
 # define VALID_OPT				valid_visual
@@ -615,6 +616,7 @@ void			print_help(void);
 void			corewar_client_mode(t_corewar *m_corewar);
 void			corewar_server_mode(t_corewar *m_corewar);
 void			corewar_visual_mode(t_corewar *m_corewar);
+void			corewar_stream_mode(t_corewar *m_corewar);
 void			corewar_default_mode(t_corewar *m_corewar);
 
 void			debug_print_memory_fd(int i_fd);

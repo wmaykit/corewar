@@ -20,6 +20,8 @@ int		corewar_run(t_corewar *m_corewar)
 		corewar_client_mode(m_corewar);
 	else if (g_options & O_VISU)
 		corewar_visual_mode(m_corewar);
+    else if (g_options & O_STREAM)
+		corewar_stream_mode(m_corewar);
 	else
 		corewar_default_mode(m_corewar);
 	return (0);
