@@ -21,7 +21,7 @@ void	ft_parse_ldouble(t_ieee754 *st, t_parts *r)
 	r->sign = *((unsigned short*)st->fbits + 4) >> 15;
 	if (r->exponent == 32767)
 	{
-		if ((FC_U((r->mantis + 1)) || FC_U((r->mantis))) && !(r->sign = 0))
+		if (!(r->sign = 0))
 			r->spec_value = NAN_VALUE;
 		else
 			r->spec_value = INF_VALUE;
